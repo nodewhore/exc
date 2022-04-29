@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<?php include 'head.html'; ?>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="cp-card">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Заголовок</th>
+                            <th scope="col">Автор</th>
+                            <th scope="col">Дата создания</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <?php include 'cpanel/elements/news.php';?>
+                          <td><a style="color: red;" href="delete_news.php?id=<?= $sql[0]?>">X</a></td>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="cp-card">
+                    <h4>Добавить новость</h4>
+                    <form action="elements/addnews.php" method="post">
+                        <div class="mb-3">
+                            <label class="form-label">Название новости</label>
+                            <input name="titlenews" type="text" class="form-control" placeholder="Название новости">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Текст новости</label>
+                            <textarea name="textnews" class="form-control" rows="3"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Автор</label>
+                            <input name="authornews" type="text" class="form-control" placeholder="Никнейм автора">
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button name="addnews" class="btn btn-primary" type="submit">Добавить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="cp-card">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Логин</th>
+                            <th scope="col">E-Mail</th>
+                            <th scope="col">Дата регистрации</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <?php include 'elements/users.php';?>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="cp-card">
+                    <h4>Добавить пользователя</h4>
+                    <form action="elements/addusers.php" method="post">
+                        <div class="mb-3">
+                            <label class="form-label">Логин</label>
+                            <input name="login1" type="text" class="form-control" placeholder="Введите логин">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Имя</label>
+                            <input name="firstname1" type="text" class="form-control" placeholder="Введите имя">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Фамилия</label>
+                            <input name="lastname1" type="text" class="form-control" placeholder="Введите фамилию">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">E-Mail</label>
+                            <input name="email1" type="email" class="form-control" placeholder="Введите E-Mail">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Пароль</label>
+                            <input name="password1" type="password" class="form-control" placeholder="Введите пароль">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">День рождения</label>
+                            <input name="date_birthday1" type="date" class="form-control" placeholder="Введите дату рождения">
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button name="addusers" class="btn btn-primary" type="submit">Добавить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.headimg{
+    width:1900px;
+    height: 700px;
+    display: block;
+    background-color: black;
+}
+
+.nav{
+    background-color: rgb(98, 106, 155);
+    padding-left: 10px;
+    opacity: 0.9;
+    height: 50px;
+}
+.menu{
+    list-style-type: none;
+    padding: 10px;
+    font-size:16px;
+    text-shadow: rgb(173, 0, 0);
+    opacity: 1;
+    
+}
+.menu li{
+    display: inline;
+    padding: 10px;
+    
+
+}
+.menu li a{
+    color:rgb(255, 255, 255) ;
+    text-decoration: none;
+    opacity: 1;
+    
+}
+.menu li a:hover{
+    border-bottom: solid;
+    transform: scale(0.5) translate(-100%, -100%);
+}
+.zavod{
+    color:white;
+    padding-top:10px;
+    font-weight: 800;
+}
+.sign{
+    margin-left: 30em;
+}
+.sign li{
+    list-style-type: none;
+}
+.sign a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.sign li a:hover{
+    transform: scale(1.1);
+}
+.media-body .author {
+    display: inline-block;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 700;
+  }
+  .media-body .metadata {
+    display: inline-block;
+    margin-left: .5rem;
+    color: #777;
+    font-size: .8125rem;
+  }
+  .footer-comment {
+    color: #777;
+  }
+  .vote.plus:hover {
+    color: green;
+  }
+  .vote.minus:hover {
+    color: red;
+  }
+  .vote {
+    cursor: pointer;
+  }
+  .comment-reply a {
+    color: #777;
+  }
+  .comment-reply a:hover, .comment-reply a:focus {
+    color: #000;
+    text-decoration: none;
+  }
+  .devide {
+    padding: 0px 4px;
+    font-size: 0.9em;
+  }
+  .media-text {
+    margin-bottom: 0.25rem;
+  }
+  .title-comments {
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    color: rgba(0, 0, 0, .87);
+    margin-bottom: 1rem;
+    padding-bottom: .25rem;
+    border-bottom: 1px solid rgba(34, 36, 38, .15);
+  }
+  .mylist{
+    width: 400px;
+    height: 250px;
+    padding-left: 80px;
+    max-width: auto;
+    color: rgb(110, 110, 110);
+    }
+    .title-number{
+    font-size: 90px;
+    padding-left: 50px;
+    font-weight: 600;
+    color:rgb(141, 139, 139)
+    }
+    .list-text{
+    font-size:22px;
+    }
+    .news {
+        position: relative;
+        display: block;
+        background: #ffffff;
+        box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 13%);
+        height: 60vh;
+    }
+    
+    .image {
+        display: block;
+        background: #000;
+        height: 40%;
+    }
+    
+    .news > .content {
+        padding: 10px 20px;
+    }
+    
+    .news > .content > .title {
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    .product-item {
+      width: 300px;
+      margin: 0 auto;
+      padding: 10px 10px 5px 10px;
+      border: 1px solid #eee;
+      background: white;
+      font-family: "Open Sans";
+      overflow: hidden;
+      transition: .4s linear;
+   }
+   .product-img {
+      transition: 1s ease-in-out;
+   }
+   .product-img:hover {
+      transform: scale(1.1);
+   }
+   .product-img img {
+      display: block;
+      width: 100%;
+   }
+   .product-list {
+      margin-top: 15px;
+   }
+   .product-list h3 {
+      font-weight: 700;
+      color: #39404B;
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 2;
+   }
+   .price {
+      color: #E34D38;
+      display: block;
+      margin-bottom: 12px;
+   }
+   .actions {
+      border-top: 1px solid #eee;
+      padding-top: 4px;
+      font-size: 13px;
+      height: 30px;
+      line-height: 30px;
+   }
+   .actions:after {
+      content: "";
+      display: table;
+      clear: both;
+   }
+   .add-to-cart, .add-to-links {
+      float: left;
+   }
+   .cart-button {
+      text-decoration: none;
+      color: #8C877C;
+      padding-right: 20px;
+      border-right: 1px solid #ddd;
+      transition: .4s linear;
+   }
+   .cart-button:before {
+      content: "\f07a";
+      font-family: FontAwesome;
+      margin-right: 10px;
+   }
+   .add-to-cart:hover .cart-button, .wishlist:hover, .compare:hover {
+      color: #E34D38;
+   }
+   .wishlist, .compare {
+      color: #8C877C;
+      padding-left: 20px;
+      transition: .4s linear;
+   }
+   .wishlist:after, .compare:after {
+      display: inline-block;
+      font-family: FontAwesome;
+      font-size: 13px;
+   }
+   .wishlist:after {
+      content: "\f004";
+   }
+   .compare:after {
+      content: "\f079";
+   }
